@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo con gradiente -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <!-- Definición de patrón de puntos -->
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="white" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Fondo redondeado -->
+  <rect width="200" height="200" rx="40" fill="url(#grad)"/>
+  
+  <!-- Patrón de fondo -->
+  <rect width="200" height="200" rx="40" fill="url(#gridPattern)"/>
+  
+  <!-- Nodo central -->
+  <circle cx="100" cy="100" r="15" fill="white"/>
+  
+  <!-- Nodos secundarios -->
+  <circle cx="60" cy="60" r="12" fill="white" opacity="0.9"/>
+  <circle cx="140" cy="60" r="12" fill="white" opacity="0.9"/>
+  <circle cx="140" cy="140" r="12" fill="white" opacity="0.9"/>
+  <circle cx="60" cy="140" r="12" fill="white" opacity="0.9"/>
+  
+  <!-- Nodos terciarios -->
+  <circle cx="40" cy="100" r="8" fill="white" opacity="0.7"/>
+  <circle cx="160" cy="100" r="8" fill="white" opacity="0.7"/>
+  <circle cx="100" cy="40" r="8" fill="white" opacity="0.7"/>
+  <circle cx="100" cy="160" r="8" fill="white" opacity="0.7"/>
+  
+  <!-- Líneas de conexión principales -->
+  <line x1="100" y1="100" x2="60" y2="60" stroke="white" stroke-width="3" opacity="0.8"/>
+  <line x1="100" y1="100" x2="140" y2="60" stroke="white" stroke-width="3" opacity="0.8"/>
+  <line x1="100" y1="100" x2="140" y2="140" stroke="white" stroke-width="3" opacity="0.8"/>
+  <line x1="100" y1="100" x2="60" y2="140" stroke="white" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Líneas de conexión secundarias -->
+  <line x1="100" y1="100" x2="40" y2="100" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="100" y1="100" x2="160" y2="100" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="100" y1="100" x2="100" y2="40" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="100" y1="100" x2="100" y2="160" stroke="white" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Líneas de conexión entre nodos secundarios -->
+  <line x1="60" y1="60" x2="140" y2="60" stroke="white" stroke-width="2" opacity="0.4"/>
+  <line x1="140" y1="60" x2="140" y2="140" stroke="white" stroke-width="2" opacity="0.4"/>
+  <line x1="140" y1="140" x2="60" y2="140" stroke="white" stroke-width="2" opacity="0.4"/>
+  <line x1="60" y1="140" x2="60" y2="60" stroke="white" stroke-width="2" opacity="0.4"/>
+</svg>

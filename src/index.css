@@ -1,0 +1,21 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ocultar barra de desplazamiento globalmente */
+*::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en navegadores WebKit */
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer y Edge */
+}
+
+
+:root {
+  --primary-blue: #2253d0;
+}
+
+style={{ backgroundColor: 'var(--primary-blue)' }}
